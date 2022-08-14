@@ -21,7 +21,7 @@ class RestaurantDetail extends React.Component{
           const restaurantId=qs.restaurant;
           axios({
             method:'GET',
-            url:`http://localhost:3000/restaurant/getRestaurantById/${restaurantId}`,
+            url:`https://zomatouserinterface.herokuapp.com/restaurant/getRestaurantById/${restaurantId}`,
             headers:{'Content-Type':'application/json'} 
           }
             
