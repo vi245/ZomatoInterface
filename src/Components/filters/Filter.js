@@ -20,11 +20,11 @@ class Filter extends React.Component{
         const mealType=qs.mealtype;
           axios(
             {method:'GET',
-            url:`http://localhost:3000/restaurant/getRestaurantsByMealType?type=${mealType}`,
+            url:`https://zomatouserinterface.herokuapp.com/restaurant/getRestaurantsByMealType?type=${mealType}`,
             headers:{'Content-Type':'application/json'}
           }
           ).then(response=> this.setState({restaurantData:response.data})).catch();
-          axios.get(`http://localhost:3000/citylist/getCityList`)
+          axios.get(`https://zomatouserinterface.herokuapp.com/citylist/getCityList`)
           .then(response=> this.setState({location:response.data})).catch();
       }
 
