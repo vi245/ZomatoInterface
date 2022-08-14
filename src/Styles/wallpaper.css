@@ -1,0 +1,213 @@
+.maincontainer{
+    height:55vh;
+    background-image: url('../../public/Images/Home_Pic.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    background-color:aliceblue;
+    position:relative;
+ 
+}  
+.direction-column
+{
+    flex-direction: column;
+}
+.no-suggestions{
+    color:#999;
+    padding: 3px;
+}
+.suggestions{
+    border:1px solid #999;
+    border-top-width: 0;
+    list-style: none;
+    margin-top: 0;
+    max-height: 143px;
+    overflow-y: auto;
+    padding-left: 0;
+    width:20vw;
+    
+}
+.suggestions li{
+    padding: 3px;
+}
+.suggestion-active,.suggestions li:hover{
+    background-color: #999;
+    cursor:pointer;
+}
+.rImage{
+    width:5vw;
+    height:5vh;
+}
+.logoHome{
+    margin-top: 10vh;
+    height:8vh;
+    width:4vw;
+   border-radius: 100%;
+    font-size:35px;
+    color:#EB2929;
+    padding:2px;
+    box-sizing: border-box;
+    font-weight: bold;
+    background-color:white;
+}
+
+h1{
+   
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    padding: 1px 1px;
+}
+.searchBar{
+    
+    height:5vh;
+    width:38vw;
+    margin-bottom: 15vh;
+    background-color: antiquewhite;
+
+}
+
+.select{
+    width:15vw;
+    height:inherit;
+    padding: 2px 2px;
+   
+   
+}
+ input[type="search"]{
+    width:22vw;
+    margin-left: 5px;
+    height:4.2vh;
+    padding: 1px 1px;
+}
+
+@media  (max-width:1200px) {
+    .logoHome{
+        margin-top: 11vh;
+        height:10vh;
+        width:6vw;
+       border-radius: 100%;
+        font-size:35px;
+        color:maroon;
+        padding:2px;
+        box-sizing: border-box;
+        font-weight: bold;
+        background-color:white;
+    }
+    .searchBar{
+      height:5vh;
+        width:45vw;
+        margin-bottom: 20vh;}
+    
+     .select{
+        width:18vw;
+        height:inherit;
+        padding: 2px 2px;}
+    input[type="search"]{
+        width:26vw;
+        height:4vh;
+        margin-left: 5px;
+        padding: 1px 1px;
+    }
+    
+}
+@media  (max-width:968px) {
+    .logoHome{
+        margin-top: 7vh;
+        height:10vh;
+        width:8vw;
+       border-radius: 100%;
+        font-size:35px;
+        color:maroon;
+        padding:2px;
+        box-sizing: border-box;
+        font-weight: bold;
+        background-color:white;
+    }
+    .searchBar{
+        height:5vh;
+          width:50vw;
+          margin-bottom: 20vh;}
+      .select{
+          width:20vw;
+          height:4.5vh;
+          padding: 2px 2px;}
+       input[type="search"]{
+          width:29vw;
+          height:4vh;
+          margin-left: 5px;
+          padding: 1px 1px;
+      }
+}
+@media  (max-width:768px) {
+    .logoHome{
+        margin-top: 7vh;
+        height:10vh;
+        width:9vw;
+       border-radius: 100%;
+        font-size:35px;
+        color:maroon;
+        padding:2px;
+        box-sizing: border-box;
+        font-weight: bold;
+        background-color:white;
+    }
+    .searchBar{
+        height:4vh;
+          width:55vw;
+          margin-bottom: 20vh;}
+      
+      .select{
+          width:22vw;
+          height:inherit;
+          padding: 2px 2px;}
+      input[type="search"]{
+          width:32vw;
+          margin-left: 5px;
+          height:3.5vh;
+          padding: 1px 1px;
+      }
+}
+@media  (max-width:600px) {
+    .logoHome{
+        margin-top: 7vh;
+        height:10vh;
+        width:13vw;
+       border-radius: 100%;
+        font-size:35px;
+        color:maroon;
+        padding:2px;
+        box-sizing: border-box;
+        font-weight: bold;
+        background-color:white;
+    }
+    .heading{
+        flex-direction: column;
+       
+    }
+    .heading h1{
+        
+        margin:1vh;
+        font-size: 3vh;
+    }
+    .searchBar{
+        height:15vh;
+          width:53vw;
+          margin-bottom: 10vh;
+        flex-direction: column;
+       
+    }
+      .select{
+       width:50vw;
+       margin-left: 1vw;
+          height:6vh;
+          padding: 2px 2px;}
+
+        input[type="search"]{
+          width:49vw;
+          margin-top: 2vh;
+          margin-right: 2vw;
+          height:5vh;
+          padding: 1px 1px;
+      }
+}

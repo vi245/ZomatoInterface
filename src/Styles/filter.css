@@ -1,0 +1,655 @@
+.filterContainer
+{
+    height:auto;
+    margin:auto;
+    width:85vw;
+    position:relative;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+     box-shadow: 0px 3px 6px #00000029;
+}
+.main{
+    position: relative;
+   
+}
+.filterBar{
+    width:20vw;
+    height:100vh;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+     box-shadow: 0px 3px 6px #00000029;
+}
+
+.outputContainer{
+    width:52vw;
+    height:100vh;
+    
+}
+
+.active{
+    background-color:#636F88;
+}
+.head{
+    color:#192F60;
+    
+}
+.link:hover{
+    background-color:#636F88;
+}
+.mx2{
+    margin-left:2vw;
+}
+.outputBar{
+    width:inherit;
+    height:85vh;
+}
+.my2{
+    margin-block-end: 2.5vh;
+}
+
+.outputBar1{
+    width:inherit;
+    height:42vh;
+    
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+     box-shadow: 0px 3px 6px #00000029;
+}
+.upperBlock{
+    width:inherit;
+    height:26vh;
+    
+}
+.lowerBlock{
+    width:inherit;
+    height:16vh;
+ 
+    
+}
+.imgBlock{
+    width:13vw;
+    height: 20vh ;
+    background-image: url('../../public/Images/breakfast.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+     margin-top: 3vh;
+     margin-left: 2vw;
+}
+
+.infoBlock{
+    width:37vw;
+    height: inherit;
+}
+.infoBlock h5{
+    margin-top:-1vh;
+
+}
+.infoBlock h5:nth-child(3){
+    color:#636F88;}
+
+.infoBlock h1:nth-child(1){
+        color:#192F60;
+    
+    }
+.typeBlock{
+    width:13vw;
+     height:11vh;
+    
+     margin-top: 2.5vh;
+     margin-left: 2vw;
+     color:#636F88;
+}
+.typeBlock h5:nth-child(2),.descBlock h5:nth-child(2)
+{
+        margin-top: -2vh;
+}
+.descBlock{
+     width:37vw;
+     height:11vh;
+    
+     margin-top: 2.5vh;
+     margin-left: 2vw;
+     color:#192F60;;
+}
+.line{
+    width: 90%;
+    margin: auto;
+    border-top: 1px solid #eee;
+}
+
+.filterBar input[type=checkbox],input[type=radio]{
+   width:2vw;
+    height:2vh;
+    margin-top: 1.5vh;
+}
+.filterBar fieldset legend{
+    outline: none;
+}
+.show{
+    display: none;
+}
+
+.selectBox{
+    height:4vh;
+    width:16vw;
+    padding:2px;
+    outline: none;
+}
+.filterBar select{
+    margin-top: 1.5vh;
+    
+}
+.color{
+    color:#192F60;
+    font-weight: bolder;
+}
+fieldset{
+    border: 0;
+    color:#636F88;
+   
+}
+fieldset legend{
+    margin-left:1vw;
+    color:#192F60;
+    font-weight:bolder;
+}
+
+.pagination{
+    height:15vh;
+    width:inherit;
+    
+}
+.link{
+    width:2vw;
+    height:4vh;
+    border: 1px solid #636F88;
+    margin-inline-end:2px;
+}
+@media(max-width:1000px)
+{
+    .pagination{
+        height:55vh;
+        width:inherit;
+        
+        align-items: center;
+    }
+    .filterBar h4{
+        font-size: 2vh;
+    }
+    fieldset legend{
+        
+        color:#192F60;
+        font-weight:bolder;
+        font-size: 1.8vh;
+    }
+    .link{
+        width:3vw;
+        height:2vh;
+        border: 1px solid #636F88;
+        margin-inline-end:4px;
+    }
+
+    .filterBar input[type=checkbox],input[type=radio]{
+        width:1.8vw;
+         height:1.8vh;
+         margin-top: 6px;
+     }
+     .filterBar label{
+        
+        font-size: 1.8vh;
+     }
+     
+    .filterBar{
+        width:30vw;
+        height:80vh;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+         box-shadow: 0px 3px 6px #00000029;
+    }
+    
+.selectBox{
+    height:2.5vh;
+    width:20vw;
+    padding:2px;
+    outline: none;
+    font-size: 1.5vh;
+}
+    
+    .outputContainer{
+        width:54vw;
+        height:100vh;
+        
+    }
+    .outputBar{
+        width:inherit;
+        height:85vh;
+    }
+    .outputBar1{
+        width:inherit;
+        height:28vh;
+        
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+         box-shadow: 0px 3px 6px #00000029;
+    }
+    .upperBlock{
+        width:inherit;
+        height:14vh;
+        
+    }
+    .lowerBlock{
+        width:inherit;
+        height:14vh;
+     
+        
+    }
+    .imgBlock{
+        width:13vw;
+        height:11vh ;
+        background-image: url('../../public/Images/breakfast.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 15px;
+         margin-top: 2vh;
+         margin-left: 2vw;
+    }
+    
+    .infoBlock{
+        width:40vw;
+        height: inherit;
+    }
+    typeBlock{
+        width:13vw;
+         height:11vh;
+        
+         margin-top: 2vh;
+         margin-left: 2vw;
+         color:#636F88;
+    }
+    .typeBlock h5{
+        font-size: 1.5vh;
+    }
+    .infoBlock h5{
+        font-size: 1.5vh;
+    }
+    .descBlock{
+        width:40vw;
+        height:11vh;
+       
+        margin-top: 2.5vh;
+        margin-left: 2vw;
+        color:#192F60;;
+   }
+    .descBlock h5{
+        font-size: 1.5vh;
+    }
+}
+@media (max-width:768px)
+{
+.togButton{
+    width:100%;
+    height:5vh;
+    display: flex;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+     box-shadow: 0px 3px 6px #00000029;
+    color:#192F60;
+    font-weight: bolder;
+    cursor:pointer;
+    padding:3px 3px;
+    border: 1px solid #eee;
+    font-size: 2vh;
+   padding:6px;
+   align-items: center;
+   position: relative;
+  z-index: 9999;
+}
+
+.pagination{
+    height:20vh;
+    width:inherit;
+}
+
+.infoBlock h5:nth-child(3),h5:nth-child(2){
+    color:#636F88;
+     font-size: 2vh;
+}
+
+.upperBlock{
+    width:inherit;
+    height:16vh;
+    
+}
+.link{
+    width:4vw;
+    height:3vh;
+    border: 1px solid #636F88;
+    margin-inline-end:4px;
+}
+.typeBlock{
+    width:13vw;
+     height:11vh;
+    font-size: 2vh;
+     margin-top: 2.5vh;
+     margin-left: 2vw;
+     color:#636F88;
+}
+.typeBlock h5{
+    font-size: 2vh;
+
+}
+.descBlock h5{
+    font-size:2vh;
+    color:#192F60;
+}
+.lowerBlock{
+    width:inherit;
+    height:14vh;
+ 
+    
+}
+.my2{
+    margin-block-end: 1vh;
+}
+.descBlock{
+    width:60vw;
+    height:14vh;
+   font-size:2vh;
+    margin-top: 2.5vh;
+    margin-left: 2vw;
+    color:#192F60;;
+}
+.imgBlock{
+    width:24vw;
+    height: 14vh ;
+    background-image: url('../../public/Images/breakfast.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+     margin-top: 3vh;
+     margin-left: 2vw;
+}
+.infoBlock{
+    width:60vw;
+    height: inherit;
+}
+.outputContainer{
+    width:100%;
+    height:100vh;
+   position: absolute;
+   top:8vh;
+   margin:auto;
+}
+.typeBlock{
+    width:24vw;
+     height:14vh;
+    
+     margin-top: 2.5vh;
+     margin-left: 2vw;
+     color:#636F88;
+}
+.selectBox{
+    height:4vh;
+    width:30vw;
+    padding:2px;
+    outline: 1px solid #eee;
+}
+.filterBar input[type=checkbox],input[type=radio]{
+    width:2vw;
+     height:2vh;
+     margin-top: 1vh;
+    
+ }
+.filterBar select{
+    margin-top: 2vh;
+    display: block;
+    
+}
+.filterBar h4{
+    
+   font-size:2vh;
+    
+}
+.outputBar1{
+    width:inherit;
+    height:33vh;
+    
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+     box-shadow: 0px 3px 6px #00000029;
+}
+
+ 
+ 
+.filterBar{
+    width:20vw;
+    height:90vh;
+    position:absolute;
+   display: none;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+     box-shadow: 0px 3px 6px #00000029;
+     top:5vh;
+}
+.togCheck{
+    display: none;
+}
+.togCheck:checked + .filterBar{
+    max-height: 100vh;
+    z-index: 999;
+    display: flex;
+  width:100%;
+
+}
+
+}
+@media (max-width:578px)
+{
+
+
+.pagination{
+    height:13vh;
+    width:inherit;
+    
+}
+
+.infoBlock h5:nth-child(3),h5:nth-child(2){
+    color:#636F88;
+     font-size: 2vh;
+}
+
+.upperBlock{
+    width:inherit;
+    height:21vh;
+}
+.lowerBlock{
+    width:inherit;
+    height:16vh;
+}
+
+.typeBlock{
+    width:13vw;
+     height:11vh;
+    font-size: 2vh;
+     margin-top: 2.5vh;
+     margin-left: 2vw;
+     color:#636F88;
+}
+.typeBlock h5{
+    font-size: 2vh;
+
+}
+.descBlock h5{
+    font-size:2vh;
+    color:#192F60;
+}
+
+.my2{
+    margin-block-end: 1vh;
+}
+.descBlock{
+    width:60vw;
+    height:14vh;
+   font-size:2vh;
+    margin-top: 2.5vh;
+    margin-left: 2vw;
+    color:#192F60;;
+}
+.imgBlock{
+    width:24vw;
+    height: 14vh ;
+    background-image: url('../../public/Images/breakfast.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+     margin-top: 3vh;
+     margin-left: 2vw;
+}
+.infoBlock{
+    width:60vw;
+    height: inherit;
+}
+.infoBlock h1{
+    font-size: 4vh;
+}
+
+.typeBlock{
+    width:24vw;
+     height:14vh;
+    
+     margin-top: 2.5vh;
+     margin-left: 2vw;
+     color:#636F88;
+}
+
+
+
+.filterBar h4{
+    
+   font-size:2.5vh;
+    
+}
+.outputBar1{
+    width:inherit;
+    height:40vh;
+    
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+     box-shadow: 0px 3px 6px #00000029;
+}
+}
+@media (max-width:420px)
+{
+
+
+.pagination{
+    height:13vh;
+    width:inherit;
+    
+}
+
+.infoBlock h5:nth-child(3),h5:nth-child(2){
+    color:#636F88;
+     font-size: 2vh;
+}
+
+.upperBlock{
+    width:inherit;
+    height:21vh;
+}
+.lowerBlock{
+    width:inherit;
+    height:16vh;
+}
+
+.typeBlock{
+    width:13vw;
+     height:11vh;
+    font-size: 2vh;
+     margin-top: 2.5vh;
+     margin-left: 2vw;
+     color:#636F88;
+}
+.typeBlock h5{
+    font-size: 2vh;
+
+}
+.descBlock h5{
+    font-size:2vh;
+    color:#192F60;
+}
+
+.my2{
+    margin-block-end: 1vh;
+}
+.descBlock{
+    width:60vw;
+    height:14vh;
+   font-size:2vh;
+    margin-top: 2.5vh;
+    margin-left: 2vw;
+    color:#192F60;;
+}
+.imgBlock{
+    width:24vw;
+    height: 15vh ;
+    background-image: url('../../public/Images/breakfast.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+     margin-top: 2vh;
+     margin-left: 2vw;
+}
+.infoBlock{
+    width:60vw;
+    height: inherit;
+}
+.infoBlock h1{
+    font-size: 2.5vh;
+}
+
+.typeBlock{
+    width:24vw;
+     height:14vh;
+    
+     margin-top: 2.5vh;
+     margin-left: 2vw;
+     color:#636F88;
+}
+
+.link{
+    width:6vw;
+    height:3.5vh;
+    border: 1px solid #636F88;
+    margin-inline-end:4px;
+}
+
+.filterBar h4{
+    
+   font-size:2.5vh;
+    
+}
+.head{
+    font-size: 2.8vh;
+}
+.outputBar1{
+    width:inherit;
+    height:38vh;
+    
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+     box-shadow: 0px 3px 6px #00000029;
+}
+.selectBox{
+    height:4vh;
+    width:50vw;
+    padding:2px;
+    outline: 1px solid #eee;
+}
+.filterBar input[type=checkbox],input[type=radio]{
+    width:3vw;
+     height:2vh;
+     margin-top:1vh;
+    
+ }
+ .filterBar label{
+    font-size: 2vh;
+ }
+.filterBar select{
+    margin-top: 2vh;
+    display: block;
+    
+}
+
+}
