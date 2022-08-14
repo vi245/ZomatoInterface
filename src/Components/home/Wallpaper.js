@@ -25,7 +25,7 @@ class WallPaper extends React.Component{
             axios(
                 {
                     method:'GET',
-                    url:`http://localhost:3000/restaurant/getRestaurantByCityName?city=${locationName}`,
+                    url:`https://zomatouserinterface.herokuapp.com/restaurant/getRestaurantByCityName?city=${locationName}`,
                     headers:{'Content-Type':'application/json'}
                 }
             ).then(response=> this.setState({restaurants:response.data})).catch()
