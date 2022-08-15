@@ -20,7 +20,7 @@ class Filter extends React.Component{
         const mealType=qs.mealtype;
           axios(
             {method:'GET',
-            url:`https://zomatouserinterface.herokuapp.com/restaurant/getRestaurantsByMealType?type=${mealType}`,
+            url:`https://zomatoms.herokuapp.com/restaurant/getRestaurantsByMealType?type=${mealType}`,
             headers:{'Content-Type':'application/json'}
           }
           ).then(response=> this.setState({restaurantData:response.data})).catch();
