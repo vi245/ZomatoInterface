@@ -17,12 +17,12 @@ class Home extends React.Component{
   }
   componentDidMount()
   {
-    axios.get(`https://zomatouserinterface.herokuapp.com/citylist/getCityList`)
+    axios.get(`https://zomatoms.herokuapp.com/citylist/getCityList`)
     .then(response=> this.setState({location:response.data})).catch();
     axios(
       {
         method:'GET',
-        url:'https://zomatouserinterface.herokuapp.com/meals/getMeals',
+        url:'https://zomatoms.herokuapp.com/meals/getMeals',
         headers:{'Content-Type':'application/json'}
       }
     ).then(response=> this.setState({mealType:response.data})).catch()
