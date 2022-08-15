@@ -24,7 +24,7 @@ class Filter extends React.Component{
             headers:{'Content-Type':'application/json'}
           }
           ).then(response=> this.setState({restaurantData:response.data})).catch();
-          axios.get(`https://zomatouserinterface.herokuapp.com/citylist/getCityList`)
+          axios.get(`https://zomatoms.herokuapp.com/citylist/getCityList`)
           .then(response=> this.setState({location:response.data})).catch();
       }
 
