@@ -1,0 +1,299 @@
+.image{
+     width:80vw;
+    height:50vh;
+    object-fit: cover;
+    margin: auto;
+}
+.absolute{
+    position: absolute;
+    width:80vw;
+    height:50vh;
+    
+}
+.imgContainer{
+    position: relative;
+    margin:auto;
+    justify-content: flex-end;
+    width:80vw;
+    height:50vh;
+    top:5vh;
+    
+    
+}
+
+.imageButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:18vw;
+    height: 5vh;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid silver;
+    position: absolute;
+    top:40vh;
+    right:5vw;
+    color:#192F60;
+    font-weight: bolder;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.i1{
+    width:20vw;
+    height:40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 16vh;
+    border-radius: 30px;
+}
+.i2{
+   
+    width:40vw;
+    margin: auto;
+    
+    
+}
+.imageButton:hover{
+    background-color: #eee;
+}
+
+.closeButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:2.5vw;
+    height: 5vh;
+    background:#888888;
+    border: 1px solid #eee;
+    position: absolute;
+   top:10vh;
+   right:15vw;
+   cursor: pointer;
+   border-radius: 100%;
+}
+.imageGallery{
+    width:80vw;
+    height:80vh;
+  justify-content:center;
+ z-index:1;
+  background: #191919 0% 0% no-repeat ;
+}
+
+.close{
+    font-size: 5vh;
+    font-weight: bolder;
+    
+}
+.closeButton:hover{
+    background-color: #eee;
+    
+}
+@media(max-width:1100px)
+{
+    .imageButton{
+        
+        width:17vw;
+        height: 5vh;
+        font-size: 1.4vh;
+       
+        top:40vh;
+        right:5vw;
+       
+        font-weight: bolder;
+       
+    }
+    .imageGallery{
+        width:80vw;
+        height:50vh;
+      justify-content: center;
+     
+      background: #191919 0% 0% no-repeat padding-box;
+    }
+    .i1{
+        width:15vw;
+        height:20vh;
+        margin-top: 9vh;
+        border-radius: 30px;
+    }
+    .i2{
+   
+        width:35vw;
+       margin: auto;
+        
+    }
+    .closeButton{
+       
+        width:2vw;
+        height: 3vh;
+        top:5vh;
+       right:15vw;
+      
+    }
+    .close{
+        font-size: 3vh;
+        font-weight: bolder;
+        
+    }
+}
+@media(max-width:968px)
+{
+    .imageButton{
+       
+        width: 25vw;
+        height: 3.5vh;
+        font-size:1.2vh;
+      
+        top:23vh;
+        right:5vw;
+        
+    }
+    .imageGallery{
+        width:80vw;
+        height:35vh;
+      
+     
+      background: #191919 0% 0% no-repeat padding-box;
+    }
+    .i1{
+    
+        margin-top: 9vh;
+        border-radius: 30px;
+    }
+    .i2{
+   
+        width:30vw;
+       margin: auto;
+        
+    }
+    .closeButton{
+       width:3vw;
+    height: 2.5vh;
+     top:1.5vh;
+       right:15vw;
+    }
+    .close{
+        font-size: 2vh;
+        font-weight: bolder;
+        
+    }
+    .image{
+        width:80vw;
+       height:30vh;
+       
+       object-fit: cover;
+       margin: 0 auto;
+   }
+   .imgContainer{
+    position: relative;
+    margin:auto;
+    justify-content: flex-end;
+    width:80vw;
+    height:30vh;
+    top:5vh;
+   
+}
+    
+}
+@media(max-width:768px)
+{
+    .imageGallery{
+        width:80vw;
+        height:40vh;
+      
+    }
+    .i1{
+        
+       margin-top:10vh;
+      
+        border-radius: 30px;
+    }
+    .i2{
+   margin: auto;
+        
+    }
+    .closeButton{
+     top:6vh;
+    }
+}
+@media(max-width:576px)
+{
+   
+    .imageButton{
+       
+        width: 36vw;
+        height: 3vh;
+        font-size:1.2vh;
+        font-weight: normal;
+        top:23vh;
+        right:5vw;
+        
+    }
+    .imageGallery{
+        width:80vw;
+        height:35vh;
+      margin: auto;
+    }
+    .i1{
+        
+       margin-top:10vh;
+       
+        border-radius: 25px;
+    }
+    .i2{
+   margin: auto;
+        
+    }
+    .closeButton{
+     top:6vh;
+     height:2vh;
+    }
+}
+@media(max-width:350px)
+{
+     .imageButton{
+    width: 40vw;
+    height: 3vh;
+    font-size:1.2vh;
+    font-weight: normal;
+    top:23vh;
+    right:5vw;
+     }
+     .imageGallery{
+    
+        width:90vw;
+        height:35vh;
+       margin:0 auto;
+    }
+    .imgContainer{
+        position: relative;
+        margin:auto;
+        justify-content: flex-end;
+        width:95vw;
+        height:30vh;
+        top:5vh;
+        
+    }
+    .absolute{
+        
+        width:90vw;
+        height:30vh;
+        
+    }
+    .image{
+        width:90vw;
+       height:30vh;
+       
+       object-fit: cover;
+       margin: 0 auto;
+   }
+    
+    .i1{
+        
+       margin-top:10vh;
+       
+        border-radius: 15px;
+    }
+    .i2{
+   margin: auto;
+        height:15vh;
+    }
+}

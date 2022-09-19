@@ -1,0 +1,441 @@
+.restaurantName{
+
+  width:80vw;
+  margin: auto;
+}
+.restaurantName h1{
+    color:#192F60;
+    margin-top: 12vh;
+}
+.tabs{
+    width:80vw;
+    height:10vh;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+     box-shadow: 0px 3px 6px #00000029;
+    margin:auto;
+    border-bottom: 1px solid silver;
+}
+.ModalMenu{
+    position:absolute;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+     box-shadow: 0px 3px 6px #00000029;
+    width:40vw;
+    height:500px;
+    background-color: #ffffff;
+   
+}
+.orderForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   margin-left: 2.4vw;
+}
+.orderForm label{
+    font-size: 2vh;
+    margin-top: 2vh;
+}
+.orderForm button{
+    width:5vw;
+    height:5vh;
+   color:black;
+   font-weight: bold;
+   border:blue;
+    background: blue 0% 0% no-repeat padding-box;
+     box-shadow: 0px 3px 6px #00000029;
+     border-radius: 4px;
+     margin-top: 12vh;
+     margin-left: 18vw;
+}
+.message{
+    background-color: #eee;
+    width:15vw;
+    height:5vh;
+}
+.marginGap{
+    margin:0;padding: 0;
+}
+.marginTop{
+    margin-top:5px;
+}
+.marginLeft{
+    margin-left:7vw;
+}
+.MenuDesc{
+    width:40vw;
+    height:inherit;
+    background-color: transparent;
+}
+.MenuImage{
+    width:40vw;
+    height:inherit;
+    background-color:transparent;
+}
+.itemImage{
+    width:7vw;
+    position: absolute;
+    height:10vh;
+    border-radius: 5px;
+    background-color: #636F88;
+}
+.subtotal{
+    background-color: transparent;
+}
+.paynow{
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: center;
+}
+.paynow button{
+    width:9vw;
+    height:5vh;
+   color:black;
+   font-weight: bold;
+   border:blue;
+    background: blue 0% 0% no-repeat padding-box;
+     box-shadow: 0px 3px 6px #00000029;
+     border-radius: 4px;
+}
+.orderButton{
+    
+    margin-left:50vw;
+    justify-content: center;
+    align-items: center;
+}
+.orderButton button{
+    width:12vw;
+    height:7vh;
+   color:white;
+   font-weight: bold;
+   border:#CE0505;
+    background: #CE0505 0% 0% no-repeat padding-box;
+     box-shadow: 0px 3px 6px #00000029;
+     border-radius: 4px;
+}
+
+.MainMenu{
+    background-color: transparent;
+    width:inherit;
+    height:430px;
+    padding: 5px;
+    margin: auto ;
+    overflow: auto;
+    background:  #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+button:hover{
+    background-color:#eee ;
+    cursor: pointer;
+}
+
+.dimension{
+    width:1.23vw;
+    height:2.8vh;
+    background-color: white;
+    border: 1px solid white;
+    font-weight: bold;
+    color: darkgreen;
+}
+.addMeal input{
+   width:1vw;
+    height:2vh;
+    background-color: white;
+    border: 1px solid white;
+    font-weight: bold;
+    color: darkgreen;
+   
+}
+.addButton{
+  
+    width:4vw;
+    margin-left: 9.5vw;
+    z-index:99;
+    font-weight: bold;
+    color: darkgreen;
+    margin-top:9vh;
+     position: absolute;
+     background-color: white;
+     border: 1px solid white;
+}
+.addMeal{
+  
+    width:4vw;
+    margin-left: 9.5vw;
+    z-index:99;
+    font-weight: bold;
+    color: darkgreen;
+    margin-top:9vh;
+    height:2.8vh;
+     position: absolute;
+     background-color: white;
+     border: 1px solid white; 
+}
+.MenuItem{
+    width:inherit;
+    height:15vh;
+    background-color: transparent;
+    border-bottom: 2px solid #636F88;
+}
+.MenuHeader{
+    background-color:  #FFFFFF;
+    width:inherit;
+    height:10vh;
+    margin: auto ;
+    padding: 5px;
+}
+.MenuHeader button{
+    height:4vh;
+    background-color: #ffffff;
+    border: 2px solid white;
+}
+.togRadio{
+    display: none;
+}
+.tab1{
+    color:#636F88;
+    width:10vw;
+    font-stretch: normal;
+    font-weight: bolder;
+}
+.tab1:hover{
+    cursor: pointer;
+}
+#radio1:checked + label{
+    border-bottom: 4px solid #CE0505;;
+}
+#radio2:checked + label{
+    border-bottom: 4px solid #CE0505;;
+}
+.tablist2{
+    position: absolute;
+   
+    width:80vw;
+    height:40vh;
+    margin: 12vh auto;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+   visibility: collapse;
+   
+}
+.tablist1{
+    position: absolute;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+   visibility: collapse;
+    width:80vw;
+    height:40vh;
+    margin: 12vh auto;
+   
+   
+}
+
+#radio1:checked ~ .tablist1{
+   
+    visibility:visible;
+   
+    
+   
+}
+#radio2:checked ~ .tablist2{
+    visibility: visible;
+    
+}
+.mvalue{
+    margin-top: -10px;
+ }
+ .mheader{
+    margin-top: 2vh;
+ }
+ .tabs h3,h4,h5{
+    margin-left: 2.5vw;
+    
+ }
+ .tabs h4{
+    color:#636F88;
+ }
+ .tabs h3,h5{
+    color:#192F60;
+ }
+
+ @media(max-width:968px)
+ {
+    .tab1{
+        color:#636F88;
+        width:20vw;
+        font-stretch: normal;
+        font-weight: bolder;
+        font-size: 2vh;
+    }
+    .tabs h4{
+        font-size:1.8vh;
+     }
+     .tabs h5{
+        font-size: 1.6vh;
+     }
+     .tabs h3{
+        font-size: 2.2vh;
+     }
+     .itemImage{
+        width:10vw;
+        
+    }
+    .orderButton{
+     margin-left:30vw;
+       
+    }
+    .addMeal{
+  
+        width:6vw;
+       
+    }
+    .addMeal input{
+        width:2vw;
+        
+     }
+    .addButton{
+  
+        width:6vw;
+       
+    }
+    .paynow button{
+    width:12vw;
+    height:5vh;
+   
+}
+.dimension{
+    width:2vw;
+   
+}
+.orderButton button{
+    width:14vw;
+    height:6.5vh;
+   
+}
+
+ }
+ @media(max-width:768px)
+ {
+    .tab1{
+        color:#636F88;
+        width:25vw;
+        font-stretch: normal;
+        font-weight: bolder;
+        font-size: 2vh;
+    }
+    .tabs h4{
+        font-size:2vh;
+     }
+     .tabs h5{
+        font-size: 1.8vh;
+     }
+     .tabs h3{
+        font-size: 2.4vh;
+     }
+     .ModalMenu{
+        
+        width:80%;
+      
+    }
+    .itemImage{
+        width:12vw;
+        
+    }
+    .orderButton{
+        margin-left:20vw;
+          
+       }
+    .addButton{
+  
+        width:8vw;
+       
+    }
+    .addMeal{
+  
+        width:8vw;
+       
+    }
+    .orderButton button{
+        width:18vw;
+        height:7vh;
+       
+    }
+    .paynow button{
+        width:14vw;
+        height:5vh;
+       
+    }
+    .dimension{
+        width:2.6vw;
+       
+    }
+    .addMeal input{
+        width:2.6vw;
+        
+     }
+ }
+ @media(max-width:576px)
+ {
+    .tab1{
+        color:#636F88;
+        width:28vw;
+        font-stretch: normal;
+        font-weight: bolder;
+        font-size: 2.1vh;
+    }
+    .tabs h4{
+        font-size:2.1vh;
+     }
+     .tabs h5{
+        font-size: 1.9vh;
+     }
+     .tabs h3{
+        font-size: 2.5vh;
+     }
+     .restaurantName h1{
+        font-size: 3.5vh;
+     }
+     .ModalMenu{
+       
+        width:90%;
+        
+    }
+    .orderButton{
+        margin-left:5vw;
+      
+          
+       }
+       .orderButton button{
+        width:22vw;
+        height:7vh;
+       
+    }
+    .itemImage{
+        width:20vw;
+        
+    }
+    .addButton{
+  
+        width:15vw;
+       
+    }
+    .addMeal{
+  
+        width:15vw;
+       
+    }
+    .paynow button{
+        width:18vw;
+        height:5vh;
+       
+    }
+    .dimension{
+        width:5vw;
+       
+    }
+    .addMeal input{
+        width:5vw;
+        
+     }
+ }
+
+ 
