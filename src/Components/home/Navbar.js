@@ -219,7 +219,7 @@ class Navbar extends React.Component{
                         <button className="cross"onClick={()=>{this.setState({modalIsOpen:false});this.handleNew();}}><span className="crossStyle">&times;</span></button></div>
                         <div className="flex direction-column center align-items ">
                        <form  onSubmit={this.handleSignInForm} className="loginForm flex direction-column ">
-                       <input className="marginAbove" type="email" value={this.state.email} onChange={(e)=>this.setState({email:e.target.value})} placeholder="Enter your email" required></input>
+                       <input className="marginAbove" type="email" value={this.state.email} onChange={(e)=>{this.setState({email:e.target.value});this.validateEmail(e);}} placeholder="Enter your email" required></input>
                         <input className="marginAbove"type="password"value={this.state.password} onChange={(e)=>this.setState({password:e.target.value})} placeholder="Enter your password" required></input>
                         <button className="marginAbove signInButton" type="submit">Sign In</button>
                        </form>
