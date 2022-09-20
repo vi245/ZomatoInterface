@@ -6,6 +6,7 @@ import {withRouter} from 'react-router';
 import '../../Styles/navbar.css';
 import { gapi } from "gapi-script";
 import axios from "axios";
+import validator from "validator";
 
 
 const CLIENT_ID=ClientID;
@@ -31,6 +32,16 @@ class Navbar extends React.Component{
             gapi.load('client:auth2',()=>{
               gapi.auth2.getAuthInstance({clientId:CLIENT_ID});
             })
+          }
+          validateEmail=(e)=>{
+            var email=e.target.value;
+            if(validator.isEmail(email))
+            {
+              this.setState({message:"Valid Email"});
+            }
+            else{
+              this.setState({message:"Enter valid Email!"});
+            }
           }
           handleNew=()=>{
             this.setState({email:""});
@@ -205,7 +216,7 @@ class Navbar extends React.Component{
                    >
                     <div className="flex direction-column sign">
                         <div className="flex space-between loginHeader"><h2>Login</h2>
-                        <button className="cross"onClick={()=>this.setState({modalIsOpen:false})}><span className="crossStyle">&times;</span></button></div>
+                        <button className="cross"onClick={()=>{this.setState({modalIsOpen:false});this.handleNew();}}><span className="crossStyle">&times;</span></button></div>
                         <div className="flex direction-column center align-items ">
                        <form  onSubmit={this.handleSignInForm} className="loginForm flex direction-column ">
                        <input className="marginAbove" type="email" value={this.state.email} onChange={(e)=>this.setState({email:e.target.value})} placeholder="Enter your email" required></input>
@@ -240,12 +251,12 @@ class Navbar extends React.Component{
                   >
                    <div className="flex direction-column sign">
                        <div className="flex space-between loginHeader"><h2>Sign Up</h2>
-                       <button className="cross"onClick={()=>this.setState({modalIsOpen:false})}><span className="crossStyle">&times;</span></button></div>
+                       <button className="cross"onClick={()=>{this.setState({modalIsOpen:false});this.handleNew();}}><span className="crossStyle">&times;</span></button></div>
                        {this.state.message? <p className="marginAbove">{this.state.message}</p>:null}
                        <div className="flex direction-column center align-items ">
                       <form onSubmit={this.handleSignUpForm} className="loginForm flex direction-column ">
                       <input className="marginAbove" type="text" value={this.state.name} onChange={(e)=>this.setState({name:e.target.value})} placeholder="Enter your name" required></input>
-                      <input className="marginAbove" type="email" value={this.state.email} onChange={(e)=>this.setState({email:e.target.value})} placeholder="Enter your email" required></input>
+                      <input className="marginAbove" type="email" value={this.state.email} onChange={(e)=>{this.setState({email:e.target.value});this.validateEmail(e)}} placeholder="Enter your email" required></input>
                       <input className="marginAbove"type="password"value={this.state.password} onChange={(e)=>this.setState({password:e.target.value})} placeholder="Enter your password" required></input>
                       <button className="marginAbove signInButton"type="submit">Sign up</button>
                        
